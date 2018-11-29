@@ -1,0 +1,69 @@
+.container {
+	max-width: 120rem;
+	margin: 8rem auto;
+	background-color: var(--color-grey-light-1);
+	box-shadow: var(--shadow-dark);
+
+	min-height: 50rem;  
+
+}
+
+.header {
+	font-size: 1.4rem;
+	height: 7rem;
+	background-color: #FFF;
+	border-bottom: var(--line); // THIS MAKES 1PX BOTTOM BORDERS!!!! ********
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.content {
+	display: flex;
+}
+
+.sidebar {
+	background-color: var(--color-grey-dark-1);
+
+	flex: 0 0 18%; 
+		// flex nav doesn't grow, shrink and has a width of 18% 
+
+	display: flex;
+	flex-direction: column;
+	// changed the direction of this element from left to right to top to bottom. 
+	justify-content: space-between;
+	// this will drop the legal text to the bottom while the Nav stays at the top. 
+	// divides all available white space between all available elements. 
+}
+
+.ferry-view {
+
+	flex: 1;
+	// we want the hotel view content to GROW as much as it can, so used 1. 
+}
+
+.detail {
+	font-size: 1.4rem; // all elements inside this INHERIT this font size (description and reviews)
+	display: flex;
+	padding: 4.5rem; // set the padding as the same as the margin on the description item
+	background-color: var(--color-grey-light-2);
+	border-bottom: var(--line);
+}
+
+.description {
+	background-color: #FFF;
+	box-shadow: var(--shadow-light); // wide almost invisable shadow
+	padding: 3rem;
+	flex: 0 0 60%; // no grow, no shrink, fill 60% (flex basis)
+	margin-right: 4.5rem;
+}
+
+.ferry-departures {
+	// background-color: yellowgreen;
+	flex: 1; // makes this fill the remainder
+	display: flex;
+	flex-direction: column; // changes the reviews to be in a COLUMN 
+	align-items: center; // makes sure the reviews stay left aligned but the button can be centered
+}
