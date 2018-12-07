@@ -96,7 +96,7 @@ body {
   flex: 0 0 60%;
   margin-right: 4.5rem; }
 
-.ferry-departures {
+.user-reviews {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -366,38 +366,49 @@ body {
   .recommend__count {
     margin-right: auto; }
 
-.depart {
+.review {
   background-color: #FFF;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden; }
-  .depart__heading {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--color-primary-light);
-    margin-bottom: 1.2rem;
-    letter-spacing: 1px; }
-  .depart__text {
+  .review__text {
     margin-bottom: 2rem;
     z-index: 10;
     position: relative; }
-  .depart__departure-box {
+  .review__user {
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .depart__time {
-    font-size: 1.2rem;
+    align-items: center; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem; }
+  .review__user-box {
+    margin-right: auto; }
+  .review__user-name {
+    font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
-    flex: 1 0 80%; }
-  .depart__day {
-    font-size: 1.2rem;
+    margin-bottom: .4rem; }
+  .review__user-date {
+    font-size: 1rem;
+    color: var(--color-grey-dark-3); }
+  .review__rating {
+    font-size: 2.2rem;
     color: var(--color-primary);
-    font-weight: 300;
-    flex: 0;
-    margin-bottom: .7rem; }
+    font-weight: 300; }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    top: -3.25rem;
+    left: -1rem;
+    line-height: 1;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    font-family: san-serif;
+    z-index: 1; }
 
 .cta {
   padding: 3.5rem 0;
